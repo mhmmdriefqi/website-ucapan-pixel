@@ -27,14 +27,14 @@ export default function ThemeMusicPlayer({ isPlayingInitially }: { isPlayingInit
 
   return (
     <div className="fixed bottom-6 right-6 z-40 bg-neutral-900 border-2 border-neutral-700 p-3 flex items-center gap-4 bg-opacity-80 backdrop-blur-sm shadow-[4px_4px_0_0_rgba(10,10,10,0.8)]">
-      <audio 
-        ref={audioRef} 
-        src="/music.mp3" 
-        loop 
+      <audio
+        ref={audioRef}
+        src="/Terbuang Dalam Waktu-Barasuara.mp3"
+        loop
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       />
-      
+
       <div className="flex items-center gap-3 overflow-hidden">
         <FaMusic className={`text-pink-300 ${isPlaying ? 'animate-bounce' : ''}`} size={16} />
         <div className="hidden sm:block font-pixel text-[10px] text-neutral-300 w-24 overflow-hidden whitespace-nowrap relative">
@@ -42,12 +42,12 @@ export default function ThemeMusicPlayer({ isPlayingInitially }: { isPlayingInit
             animate={{ x: [100, -100] }}
             transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
           >
-            Memories.mp3
+            Terbuang Dalam Waktu-Barasuara.mp3
           </motion.div>
         </div>
       </div>
 
-      <button 
+      <button
         onClick={togglePlay}
         className="font-pixel text-xs bg-neutral-800 border border-neutral-600 p-2 hover:bg-neutral-700 hover:text-pink-200 transition-colors cursor-pointer"
       >
