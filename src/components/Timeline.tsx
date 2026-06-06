@@ -13,10 +13,10 @@ type Event = {
 };
 
 const events: Event[] = [
-  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kita mi ini orangnya.", imageColor: "bg-blue-400", imagePath: "/timeline1.jpg" },
-  { id: 2, year: "Level 2", title: "Mulai Dekatki'", desc: "Obrolan makin panjang, ketawata jago bikin nyangkut di pikiran.", imageColor: "bg-green-400", imagePath: "/timeline2.jpg" },
-  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' dilewati. Sabarta itu selalu bikin kurasa puji syukurka jadi Batman.", imageColor: "bg-yellow-400", imagePath: "/timeline3.jpg" },
-  { id: 4, year: "Level 4", title: "Sekarang mi", desc: "Makasih banyak sudah bertahan sama Batman, nah. Tetapki sama-sama, Bondeng sayang.", imageColor: "bg-purple-400", imagePath: "/timeline4.jpg" },
+  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kita mi ini orangnya.", imageColor: "bg-blue-400", imagePath: "/4.JPG" },
+  { id: 2, year: "Level 2", title: "Mulai Dekatki'", desc: "Obrolan makin panjang, ketawata jago bikin nyangkut di pikiran.", imageColor: "bg-green-400", imagePath: "/3.JPG" },
+  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' dilewati. Sabarta itu selalu bikin kurasa puji syukurka jadi Batman.", imageColor: "bg-yellow-400", imagePath: "/5.JPG" },
+  { id: 4, year: "Level 4", title: "Sekarang mi", desc: "Makasih banyak sudah bertahan sama Batman, nah. Tetapki sama-sama, Bondeng sayang.", imageColor: "bg-purple-400", imagePath: "/1.jpg" },
 ];
 
 export default function Timeline() {
