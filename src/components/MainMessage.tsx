@@ -30,13 +30,13 @@ export default function MainMessage() {
           <div className="absolute inset-0 border border-neutral-700 hover:border-pink-300/50 transition-colors duration-1000 pointer-events-none" />
 
           <p className="text-neutral-300 text-lg md:text-xl font-light tracking-wide leading-loose mb-6">
-            Kalo saya ingat-ingat lagi, eh luar biasa tawwa kesabaranta lewati semuanya sama saya. Ndak gampang memang, tp kau tetap pilih bertahan.
+            Kalo saya ingat-ingat lagi, eh luar biasa tawwa kesabaranta lewati semuanya sama saya. Ndak gampang memang, tp kita tetap pilih bertahan.
           </p>
           <p className="text-neutral-300 text-lg md:text-xl font-light tracking-wide leading-loose mb-6">
             Makasih banyak sudah jadi cewe yang paling sabar menghadapi semuanya. Sehat-sehatki selalu nah, biarpun kadang bikin emosiki, tapi percaya maki Batman selalu sayangki.
           </p>
           <p className="text-pink-200 text-lg md:text-xl font-medium tracking-wide leading-loose mt-12 text-right">
-            - Dari Lelakimu, si Batman.
+            - Dari Batman.
           </p>
         </div>
       </motion.div>
