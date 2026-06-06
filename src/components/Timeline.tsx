@@ -9,13 +9,14 @@ type Event = {
   title: string;
   desc: string;
   imageColor: string;
+  imagePath: string;
 };
 
 const events: Event[] = [
-  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kau mi ini orangnya.", imageColor: "bg-blue-400" },
-  { id: 2, year: "Level 2", title: "Mulai Dekatki'", desc: "Obrolan makin panjang, ketawata jago bikin nyangkut di pikiran.", imageColor: "bg-green-400" },
-  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' lewati. Sabarnu itu selalu bikin kurasa puji syukurka jadi Batman mu.", imageColor: "bg-yellow-400" },
-  { id: 4, year: "Level 4", title: "Sekarang mi", desc: "Makasih banyak sudah bertahan sama Batman, nah. Tetapki sama-sama, Bondeng sayang.", imageColor: "bg-purple-400" },
+  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kau mi ini orangnya.", imageColor: "bg-blue-400", imagePath: "/timeline1.jpg" },
+  { id: 2, year: "Level 2", title: "Mulai Dekatki'", desc: "Obrolan makin panjang, ketawata jago bikin nyangkut di pikiran.", imageColor: "bg-green-400", imagePath: "/timeline2.jpg" },
+  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' lewati. Sabarnu itu selalu bikin kurasa puji syukurka jadi Batman mu.", imageColor: "bg-yellow-400", imagePath: "/timeline3.jpg" },
+  { id: 4, year: "Level 4", title: "Sekarang mi", desc: "Makasih banyak sudah bertahan sama Batman, nah. Tetapki sama-sama, Bondeng sayang.", imageColor: "bg-purple-400", imagePath: "/timeline4.jpg" },
 ];
 
 export default function Timeline() {
@@ -109,8 +110,10 @@ export default function Timeline() {
 
               {/* Modal Body */}
               <div className="p-6">
-                <div className={`w-full aspect-video ${selectedEvent.imageColor} mb-6 flex items-center justify-center border-2 border-neutral-800 pixelated`}>
-                  <span className="font-pixel text-neutral-900">IMAGE</span>
+                <div className={`w-full aspect-video ${selectedEvent.imageColor} mb-6 flex items-center justify-center border-2 border-neutral-800 pixelated relative overflow-hidden`}>
+                  <img src={selectedEvent.imagePath} alt={selectedEvent.title} className="absolute inset-0 w-full h-full object-cover text-transparent" onError={(e) => e.currentTarget.style.display = 'none'} />
+                  {/* Fallback jika gambar kosong */}
+                  <span className="font-pixel text-neutral-900 absolute z-[-1]">IMAGE</span>
                 </div>
                 <h3 className="font-pixel text-lg text-pink-300 mb-2">{selectedEvent.title}</h3>
                 <p className="text-neutral-300 font-light text-sm leading-relaxed mb-4">

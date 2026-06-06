@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
 
 const photos = [
-  { id: 1, color: "bg-red-400", title: "Memory 1" },
-  { id: 2, color: "bg-blue-400", title: "Memory 2" },
-  { id: 3, color: "bg-green-400", title: "Memory 3" },
-  { id: 4, color: "bg-yellow-400", title: "Memory 4" },
-  { id: 5, color: "bg-purple-400", title: "Memory 5" },
-  { id: 6, color: "bg-pink-400", title: "Memory 6" },
+  { id: 1, color: "bg-red-400", title: "Memory 1", imagePath: "/1.jpg" },
+  { id: 2, color: "bg-blue-400", title: "Memory 2", imagePath: "/2.JPG" },
+  { id: 3, color: "bg-green-400", title: "Memory 3", imagePath: "/3.JPG" },
+  { id: 4, color: "bg-yellow-400", title: "Memory 4", imagePath: "/4.JPG" },
+  { id: 5, color: "bg-purple-400", title: "Memory 5", imagePath: "/5.JPG" },
+  { id: 6, color: "bg-pink-400", title: "Memory 6", imagePath: "/6.JPG" },
 ];
 
 export default function PixelGallery() {
@@ -17,7 +17,7 @@ export default function PixelGallery() {
 
   return (
     <section className="relative min-h-screen py-24 px-6 max-w-5xl mx-auto flex flex-col justify-center">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -38,9 +38,10 @@ export default function PixelGallery() {
             onClick={() => setSelectedPhoto(photo)}
             className="cursor-pointer group relative aspect-square bg-neutral-900 border-4 border-neutral-700 hover:border-pink-300 p-2 md:p-3 transition-colors shadow-[6px_6px_0_0_rgba(20,20,20,0.9)] hover:shadow-[8px_8px_0_0_rgba(255,192,203,0.3)]"
           >
-            <div className={`w-full h-full ${photo.color} brightness-75 group-hover:brightness-100 transition-all duration-300 flex items-center justify-center pixelated`}>
-              {/* Replace with Next Image later */}
-              <span className="font-pixel text-[10px] text-neutral-900 opacity-50">IMG_{photo.id}</span>
+            <div className={`w-full h-full ${photo.color} brightness-75 group-hover:brightness-100 transition-all duration-300 flex items-center justify-center pixelated relative overflow-hidden`}>
+              <img src={photo.imagePath} alt={photo.title} className="absolute inset-0 w-full h-full object-cover text-transparent" onError={(e) => e.currentTarget.style.display = 'none'} />
+              {/* Fallback jika gambar belum dimasukkan */}
+              <span className="font-pixel text-[10px] text-neutral-900 opacity-50 relative z-[-1]">IMG_{photo.id}</span>
             </div>
             {/* Corner decorations */}
             <div className="absolute top-0 left-0 w-2 h-2 bg-neutral-950 -mt-1 -ml-1" />
@@ -54,7 +55,7 @@ export default function PixelGallery() {
       {/* Lightbox Modal */}
       <AnimatePresence>
         {selectedPhoto && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -64,15 +65,16 @@ export default function PixelGallery() {
             <button className="absolute top-6 right-6 text-neutral-400 hover:text-white cursor-pointer z-50">
               <FaTimes size={24} />
             </button>
-            <motion.div 
+            <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", bounce: 0.3 }}
-              className={`w-full max-w-3xl aspect-[4/3] md:aspect-video ${selectedPhoto.color} border-4 border-neutral-700 shadow-[12px_12px_0_0_rgba(255,192,203,0.2)] flex items-center justify-center`}
+              className={`w-full max-w-3xl aspect-[4/3] md:aspect-video ${selectedPhoto.color} border-4 border-neutral-700 shadow-[12px_12px_0_0_rgba(255,192,203,0.2)] flex items-center justify-center relative overflow-hidden`}
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="font-pixel text-4xl text-neutral-900 opacity-80">{selectedPhoto.title}</span>
+              <img src={selectedPhoto.imagePath} alt={selectedPhoto.title} className="absolute inset-0 w-full h-full object-contain bg-black/50 text-transparent" onError={(e) => e.currentTarget.style.display = 'none'} />
+              <span className="font-pixel text-4xl text-neutral-900 opacity-80 relative z-[-1]">{selectedPhoto.title}</span>
             </motion.div>
           </motion.div>
         )}
