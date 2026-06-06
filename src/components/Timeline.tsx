@@ -13,9 +13,9 @@ type Event = {
 };
 
 const events: Event[] = [
-  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kau mi ini orangnya.", imageColor: "bg-blue-400", imagePath: "/timeline1.jpg" },
+  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kita mi ini orangnya.", imageColor: "bg-blue-400", imagePath: "/timeline1.jpg" },
   { id: 2, year: "Level 2", title: "Mulai Dekatki'", desc: "Obrolan makin panjang, ketawata jago bikin nyangkut di pikiran.", imageColor: "bg-green-400", imagePath: "/timeline2.jpg" },
-  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' lewati. Sabarnu itu selalu bikin kurasa puji syukurka jadi Batman mu.", imageColor: "bg-yellow-400", imagePath: "/timeline3.jpg" },
+  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' dilewati. Sabarta itu selalu bikin kurasa puji syukurka jadi Batman.", imageColor: "bg-yellow-400", imagePath: "/timeline3.jpg" },
   { id: 4, year: "Level 4", title: "Sekarang mi", desc: "Makasih banyak sudah bertahan sama Batman, nah. Tetapki sama-sama, Bondeng sayang.", imageColor: "bg-purple-400", imagePath: "/timeline4.jpg" },
 ];
 
