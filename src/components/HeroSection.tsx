@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
 
 export default function HeroSection() {
-  const fullText = "Untuk Sesorang yang Spesial...";
+  const fullText = "Teruntuk Bondengku Sayang...";
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -54,7 +54,7 @@ export default function HeroSection() {
         className="mt-6 max-w-xl"
       >
         <p className="text-neutral-300 text-lg md:text-xl font-light tracking-wide leading-relaxed">
-          Setiap perjalanan punya ceritanya sendiri, dan ini adalah sedikit kilas balik tentang kita.
+          Banyakmi liku-liku ta' lewati, tapi kau tetap sabar toh batenna sama Batman.
         </p>
       </motion.div>
 

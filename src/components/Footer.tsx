@@ -16,8 +16,8 @@ export default function Footer({ onReplay }: { onReplay: () => void }) {
         </motion.div>
         
         <p className="font-pixel text-sm text-neutral-400 mb-8 max-w-md leading-relaxed">
-          Terima kasih sudah membaca sampai akhir. 
-          Semoga ini bisa membuatmu tersenyum hari ini.
+          Makasih nah sudah dibaca sampai habis. 
+          Senyum mko tondang, senyummu yang paling manis.
         </p>
 
         <motion.button

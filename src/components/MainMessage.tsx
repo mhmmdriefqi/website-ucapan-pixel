@@ -22,7 +22,7 @@ export default function MainMessage() {
         </motion.div>
 
         <h2 className="font-pixel text-2xl md:text-4xl text-pink-100 mb-10 leading-relaxed shadow-sm drop-shadow-md">
-          Selamat Hari Bahagia
+          Makasih Banyak Ya, Bondeng!
         </h2>
         
         <div className="bg-[#111111]/80 backdrop-blur-sm border-2 border-neutral-700 p-8 md:p-12 shadow-[8px_8px_0_0_rgba(15,15,15,0.8)] relative text-left">
@@ -30,15 +30,13 @@ export default function MainMessage() {
           <div className="absolute inset-0 border border-neutral-700 hover:border-pink-300/50 transition-colors duration-1000 pointer-events-none" />
 
           <p className="text-neutral-300 text-lg md:text-xl font-light tracking-wide leading-loose mb-6">
-            Menulis pesan ini membuatku sadar betapa banyak hal yang sudah kita lewati. 
-            Mungkin kata-kata tidak akan pernah cukup untuk mendeskripsikan semuanya.
+            Kalo saya ingat-ingat lagi, eh luar biasa tawwa kesabaranta lewati semuanya sama saya. Ndak gampang memang, tp kau tetap pilih bertahan.
           </p>
           <p className="text-neutral-300 text-lg md:text-xl font-light tracking-wide leading-loose mb-6">
-            Terima kasih untuk setiap tawa, dan hari-hari yang menyenangkan. 
-            Semoga harimu penuh dengan kebahagiaan, karena kamu pantas mendapatkan yang terbaik.
+            Makasih banyak sudah jadi cewe yang paling sabar menghadapi semuanya. Sehat-sehatki selalu nah, biarpun kadang bikin emosiki, tapi percaya maki Batman selalu sayangki.
           </p>
           <p className="text-pink-200 text-lg md:text-xl font-medium tracking-wide leading-loose mt-12 text-right">
-            - Dari Seseorang yang Peduli.
+            - Dari Lelakimu, si Batman.
           </p>
         </div>
       </motion.div>

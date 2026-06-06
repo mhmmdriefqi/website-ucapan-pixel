@@ -12,10 +12,10 @@ type Event = {
 };
 
 const events: Event[] = [
-  { id: 1, year: "Level 1", title: "Awal Berkenalan", desc: "Masih kaku, malu-malu, tapi ada rasa ingin tahu yang besar.", imageColor: "bg-blue-400" },
-  { id: 2, year: "Level 2", title: "Mulai Dekat", desc: "Obrolan malam yang panjang, saling membagi cerita.", imageColor: "bg-green-400" },
-  { id: 3, year: "Level 3", title: "Memorable Moment", desc: "Hal favorit yang selalu diingat sampai sekarang.", imageColor: "bg-yellow-400" },
-  { id: 4, year: "Level 4", title: "Sekarang", desc: "Dan kita sampai di titik ini. Terima kasih untuk semuanya.", imageColor: "bg-purple-400" },
+  { id: 1, year: "Level 1", title: "Masih Malu-malu", desc: "Masih kaku, baku sapa seperlunya, tapi ada firasat memang kau mi ini orangnya.", imageColor: "bg-blue-400" },
+  { id: 2, year: "Level 2", title: "Mulai Dekatki'", desc: "Obrolan makin panjang, ketawata jago bikin nyangkut di pikiran.", imageColor: "bg-green-400" },
+  { id: 3, year: "Level 3", title: "Lewati Ujian", desc: "Susah senang ta' lewati. Sabarnu itu selalu bikin kurasa puji syukurka jadi Batman mu.", imageColor: "bg-yellow-400" },
+  { id: 4, year: "Level 4", title: "Sekarang mi", desc: "Makasih banyak sudah bertahan sama Batman, nah. Tetapki sama-sama, Bondeng sayang.", imageColor: "bg-purple-400" },
 ];
 
 export default function Timeline() {
@@ -29,7 +29,7 @@ export default function Timeline() {
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h2 className="font-pixel text-2xl md:text-3xl text-neutral-100 mb-4 tracking-wider">Quest Log</h2>
+        <h2 className="font-pixel text-2xl md:text-3xl text-neutral-100 mb-4 tracking-wider">Jejak Langkah</h2>
       </motion.div>
 
       {/* The RPG Timeline Line */}

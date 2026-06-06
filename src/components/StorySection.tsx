@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 
 const stories = [
   {
-    title: "Awal Mula",
-    content: "Semuanya dimulai dari hal-hal kecil yang sederhana. Siapa sangka dari sapaan biasa bisa menjadi sesuatu yang bermakna.",
-    date: "Awal Bertemu",
+    title: "Awal Ketemu",
+    content: "Awal ketemu malu-malu, nda disangka bisa sejauh ini perjalananta. Pelan-pelan maki mulai akrab.",
+    date: "Waktu Itu",
   },
   {
-    title: "Masa-Masa Menyenangkan",
-    content: "Tawa, canda, dan kadang sedikit perbedaan pendapat. Tapi justru itu yang membuat semuanya hidup dan berwarna.",
+    title: "Sabar Lewati Ujian",
+    content: "Banyak sekali cobaan yg datang, hujan badai ta' lewati. Salutka' sama kesabaranta, jarang ada cewe tangguh kaya kau nah.",
     date: "Perjalanan Kita",
   },
   {
-    title: "Hari Ini & Nanti",
-    content: "Terima kasih sudah menjadi bagian dari hidup ini. Semoga hari-harimu selalu secerah senyummu.",
+    title: "Batman & Bondeng",
+    content: "Terima kasih nah sudah bertahan terus. Semoga saya bisa selalu jadi Batman-mu yang siang malam siap jaga ki.",
     date: "Sekarang",
   }
 ];
@@ -30,7 +30,7 @@ export default function StorySection() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="font-pixel text-2xl md:text-3xl text-neutral-100 mb-4 tracking-wider">Chapter 1</h2>
+        <h2 className="font-pixel text-2xl md:text-3xl text-neutral-100 mb-4 tracking-wider">Perjalananta'</h2>
         <div className="h-1 w-24 bg-pink-400/50 mx-auto" />
       </motion.div>
 
