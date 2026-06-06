@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
 
 export default function HeroSection() {
-  const fullText = "Teruntuk Bondengku Sayang...";
+  const fullText = "Bondengku Sayang...";
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -54,7 +54,7 @@ export default function HeroSection() {
         className="mt-6 max-w-xl"
       >
         <p className="text-neutral-300 text-lg md:text-xl font-light tracking-wide leading-relaxed">
-          Banyakmi liku-liku ta' lewati, tapi kau tetap sabar toh batenna sama Batman.
+          Banyakmi liku-liku ta' dilewati, tapi tetapki sabar sama Batman.
         </p>
       </motion.div>
 
